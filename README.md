@@ -1,24 +1,139 @@
 # Deloitte Valuation Portfolio
 
-A curated collection of financial modeling and valuation projects focused on Discounted Cash Flow (DCF) analysis, corporate finance frameworks, and quantitative financial analysis.
+A quantitative valuation portfolio demonstrating **Discounted Cash Flow (DCF) analysis, financial modeling, market-data analysis, SQL database integration, Python-based valuation calculations, and Excel reporting.**
+
+---
 
 ## Project Overview
-* **Primary Objective:** Demonstrate the application of professional financial modeling, valuation techniques, and quantitative analysis methodologies commonly used in corporate finance and consulting environments.
-* **Core Framework:** Utilize a Discounted Cash Flow (DCF) valuation model to estimate a company's intrinsic value by forecasting future free cash flows and discounting them to their present value using an appropriate cost of capital.
 
-## Directory Structure
-* **`Project_1_DCF_Model/`**
-  * `src/` — Contains core working files, financial models, analytical scripts, and model logic.
-  * `outputs/` — Contains valuation summaries, quantitative outputs, analytical results, and supporting reports.
+### Primary Objective
 
-## Key Methodologies & Tools
-* **DCF Analysis:** Forecast future free cash flows and discount them to present value using an appropriate discount rate and terminal value methodology.
-* **Financial Modeling:** Analyze historical financial performance, operating drivers, growth assumptions, margins, and other key valuation inputs to develop forward-looking projections.
-* **Valuation Analysis:** Assess enterprise value and equity value through the seamless integration of projected cash flows, discount rates, and terminal value assumptions.
-* **Scenario & Sensitivity Analysis:** Evaluate how changes in key assumptions impact valuation outcomes and identify the primary drivers of intrinsic value.
-* **Live Stock Market Data Pipeline:** Programmatically pull and ingest real-time and historical stock market data—including historical stock prices, balance sheets, income statements, and cash flow statements—via APIs to feed downstream databases and analytical models.
-* **Database & Spreadsheet Integration:** Store, query, and manage structured financial data using **MySQL** databases, seamlessly bridging backend data pipelines with front-end **Excel** financial models.
-* **Technical Stack:** Combine traditional spreadsheet-based financial modeling principles with API-driven stock market data acquisition, MySQL database management, structured data processing, and computational workflows to support reproducible, transparent, and scalable analysis.
+Demonstrate the application of **valuation methodologies, quantitative analysis, financial modeling, data processing, and technology-enabled workflows** relevant to corporate finance and valuation consulting.
 
-## Project Objective
-The portfolio is designed to showcase an end-to-end approach to financial valuation—spanning automated stock market API data ingestion, historical balance sheet and price analysis, MySQL database storage, Excel financial modeling, cash flow forecasting, discounting, terminal value calculation, and final valuation interpretation.
+### Core Framework
+
+The portfolio uses a **Discounted Cash Flow (DCF)** framework to estimate intrinsic value by projecting future free cash flows, discounting those cash flows using a selected discount rate, and incorporating terminal value assumptions.
+
+### Project Highlights
+
+- Built a **Python-based DCF valuation engine** for Microsoft Corporation
+- Developed five-year **Free Cash Flow (FCF) projections**
+- Calculated **Enterprise Value, Equity Value, and Implied Share Price**
+- Implemented **WACC and terminal-growth sensitivity analysis**
+- Built a **MySQL market-data warehouse** and SQL querying workflow
+- Retrieved and processed historical market data using **Python and yfinance**
+- Generated an **Excel-based valuation deliverable** with analytical outputs and visualizations
+- Integrated **Python, SQL/MySQL, Pandas, and Excel** into a reproducible valuation workflow
+
+---
+
+## Project 1 — Microsoft DCF Valuation Model
+
+The project develops an **integrated quantitative valuation workflow** for Microsoft Corporation.
+
+### Valuation Methodology
+
+The DCF model incorporates:
+
+- Five-year free cash flow projections
+- Free cash flow growth assumptions
+- Discount rate / WACC assumptions
+- Terminal growth assumptions
+- Gordon Growth terminal value methodology
+- Present value of projected cash flows
+- Present value of terminal value
+- Enterprise value
+- Equity value
+- Implied share price
+- Market price comparison
+- WACC and terminal-growth sensitivity analysis
+
+The model evaluates how changes in key valuation assumptions affect estimated intrinsic value.
+
+---
+
+## Data & Technology Workflow
+
+The project combines financial valuation techniques with data and technology workflows:
+
+**Market Data → SQL/MySQL → Python/Pandas → DCF Valuation → Excel Reporting**
+
+This workflow integrates **data processing, database management, quantitative valuation, and financial reporting** into a structured analytical process.
+
+---
+
+## Python
+
+Python is used for:
+
+- Data retrieval and processing
+- Structured data transformation
+- DCF valuation calculations
+- Quantitative analysis
+- Excel output generation
+
+### Key Libraries & Technologies
+
+- **Pandas**
+- **NumPy**
+- **SQLAlchemy**
+- **yfinance**
+- **OpenPyXL**
+
+---
+
+## SQL & MySQL
+
+A **MySQL database** is used to store and query structured market data.
+
+The SQL workflow supports:
+
+- Database loading
+- Structured data storage
+- SQL querying
+- Pandas integration
+- Downstream quantitative analysis
+
+---
+
+## Market Data Pipeline
+
+The project uses Python and **yfinance** to retrieve historical market data across a multi-company ticker universe.
+
+The resulting data is transformed into a structured dataset for database storage and analytical use.
+
+---
+
+## Excel Valuation Deliverable
+
+The project generates an **Excel-based valuation workbook** designed to organize analytical results and communicate valuation outputs.
+
+The workbook includes:
+
+- Valuation summary
+- DCF analysis
+- Five-year FCF projections
+- WACC / terminal-growth sensitivity analysis
+- Historical market data
+- Lookup formulas
+- Aggregated analytical tables
+- FCF visualization
+
+---
+
+## Repository Structure
+
+```text
+Project_1_DCF_Model/
+│
+├── src/
+│   ├── dcf_valuation_engine.py
+│   ├── dcf_valuation_engine01.py
+│   ├── load_to_sql.py
+│   ├── query_warehouse.py
+│   └── export_to_excel.py
+│
+├── outputs/
+│   └── valuation and analytical outputs
+│
+└── README.md
